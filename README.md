@@ -40,37 +40,57 @@ Contact-Manager-App/
    cd contact-manager-app
 
 2. Install dependencies
+   
    npm install
 
 3.Set environment variables
+
   Create a .env file in the project root and add:
+  
   PORT=5000
+  
   MONGO_URI=your_mongodb_connection_string
+  
   JWT_SECRET=your_secret_key
+  
 4.Run the server
+
   npm run dev
 
 
 API Endpoints
+
 🔑 Authentication
+
 Method	Endpoint	Description
+
 POST	/api/users/register	Register new user
+
 POST	/api/users/login	Login and get token
+
 📇 Contacts
+
 Method	Endpoint	Description
+
 GET	/api/contacts	Get all contacts
+
 GET	/api/contacts/:id	Get single contact
+
 POST	/api/contacts	Create new contact
+
 PUT	/api/contacts/:id	Update contact
+
 DELETE	/api/contacts/:id	Delete contact
 
 
 
 
-
 🔒 Authentication
+
 All contact routes are protected.
+
 Use the token from /api/users/login in headers:
+
 Authorization: Bearer <your_token>
 
 
