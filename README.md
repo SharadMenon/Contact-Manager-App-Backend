@@ -1,23 +1,30 @@
-📇 Contact Manager App
-A simple Contact Manager built using Node.js, Express.js, and MongoDB.
+# 📇 Contact Manager App
+
+A simple **Contact Manager** built using **Node.js**, **Express.js**, and **MongoDB**.  
 This project demonstrates how to build a RESTful API with authentication, error handling, and clean code structure.
 
-🚀 Features
-Create, Read, Update, Delete (CRUD) contacts
-User authentication with JWT
-Password hashing with bcrypt
-Proper error handling with middleware
-Organized MVC folder structure
-MongoDB integration with Mongoose
+---
 
-🛠️ Tech Stack
-Node.js
-Express.js
-MongoDB (Mongoose)
-JWT Authentication
-bcrypt
+## 🚀 Features
+- Create, Read, Update, Delete (CRUD) contacts
+- User authentication with **JWT**
+- Password hashing with **bcrypt**
+- Proper error handling with middleware
+- Organized **MVC folder structure**
+- MongoDB integration with **Mongoose**
 
-📂 Project Structure
+---
+
+## 🛠️ Tech Stack
+- **Node.js**
+- **Express.js**
+- **MongoDB (Mongoose)**
+- **JWT Authentication**
+- **bcrypt**
+
+---
+
+## 📂 Project Structure
 Contact-Manager-App/
 │── controllers/   # Route logic
 │── models/        # MongoDB schemas
@@ -28,33 +35,36 @@ Contact-Manager-App/
 │── server.js      # App entry point
 
 ⚙️ Installation & Setup
-Clone the repository
-git clone https://github.com/your-username/contact-manager-app.git
-cd contact-manager-app
-Install dependencies
-npm install
-Set environment variables
-Create a .env file in the project root and add:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-Run the server
-npm start
-Server will start on: http://localhost:5000
+1. Clone the repository
+   git clone https://github.com/your-username/contact-manager-app.git
+   cd contact-manager-app
+
+2. Install dependencies
+   npm install
+
+3.Set environment variables
+  Create a .env file in the project root and add:
+  PORT=5000
+  MONGO_URI=your_mongodb_connection_string
+  JWT_SECRET=your_secret_key
+4.Run the server
+  npm run dev
 
 
 📌 API Endpoints
-Authentication
+🔑 Authentication
 Method	Endpoint	Description
 POST	/api/users/register	Register new user
 POST	/api/users/login	Login and get token
-Contacts
+📇 Contacts
 Method	Endpoint	Description
 GET	/api/contacts	Get all contacts
 GET	/api/contacts/:id	Get single contact
 POST	/api/contacts	Create new contact
 PUT	/api/contacts/:id	Update contact
 DELETE	/api/contacts/:id	Delete contact
+
+
 
 🔒 Authentication
 All contact routes are protected.
