@@ -51,7 +51,7 @@ Contact-Manager-App/
   npm run dev
 
 
-📌 API Endpoints
+API Endpoints
 🔑 Authentication
 Method	Endpoint	Description
 POST	/api/users/register	Register new user
@@ -63,6 +63,8 @@ GET	/api/contacts/:id	Get single contact
 POST	/api/contacts	Create new contact
 PUT	/api/contacts/:id	Update contact
 DELETE	/api/contacts/:id	Delete contact
+
+
 
 
 
